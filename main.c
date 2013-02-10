@@ -95,7 +95,7 @@ int main(void)
 	{
 		while ( ! mAD1GetIntFlag() )
 		{
-                // wait for the first conversion to complete so there will be vaild data in ADC result registers
+                    // wait for the first conversion to complete so there will be vaild data in ADC result registers
                 }
 
 		// the results of the conversions are available in channel4 and channel5
@@ -107,7 +107,7 @@ int main(void)
                     PORTSetBits(IOPORT_B, BIT_9);
                 }
                 else{
-                    PORTSetBits(IOPORT_B, BIT_9);
+                    PORTClearBits(IOPORT_B, BIT_9);
                 }
 
 
